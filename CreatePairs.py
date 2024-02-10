@@ -25,6 +25,8 @@ def readPairsIntoArray():
 def createPairs(nameList, pairList):
     #clone nameList into dummy so not to do destrutive edits to original list
     dummy = nameList[:]
+    if len(dummy) % 2 == 1:
+        dummy.append("O")
     newPairs = []
     count = 0
     #run through dummy list making pairs and removing the names that have been paired
