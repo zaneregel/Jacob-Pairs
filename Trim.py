@@ -19,6 +19,19 @@ def deleteNamePair(name):
     # replace file with original name
     os.replace('temp.txt', pairsFile)
 
+    with open(namesFile, "r") as input:
+        with open("remp.txt", "w") as output:
+            # iterate all lines from file
+            for line in input:
+                #split line based on ','
+                if line.strip("\n") != name:
+                    print("Name Found")
+                    output.write(line)
+
+    # replace file with original name
+    os.replace('remp.txt', namesFile)
+
+
 def main():
 
     name = sys.argv[1]
