@@ -21,7 +21,8 @@ def readPairsIntoArray():
             #append pair into array
             data.append(innerList)
         return data
-    
+    #GigaPog
+    #I contributed a lot to this
 def createPairs(nameList, pairList):
     #clone nameList into dummy so not to do destrutive edits to original list
     dummy = nameList[:]
